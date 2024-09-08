@@ -126,16 +126,18 @@ backend/
 - The images and context are sent to the FastAPI back-end where they are processed.
 - The backend uses the Google Generative AI model to generate comprehensive testing instructions based on the screenshots.
 - The instructions are sent back to the frontend and displayed to the user.
-## How it Works
+
+## Results Screenshot
 
 1. **Initial Web Interface:**
-   ![Initial Web Interface](./screenshots/initial-web-interface-screenshot.png)
+   ![Initial Web Interface](initial-web.png)
 
 2. **Putting Context and Uploading Image:**
-   ![Putting Context and Uploading Image](./screenshots/putting-context-uploading-image-screenshot.png)
+   ![Putting Context and Uploading Image](uploadedwithcontext.png)
 
 3. **Result Screenshot:**
-   ![Result Screenshot](./screenshots/result-screenshot.png)
+   ![Result Screenshot](result1.png)
+   ![Result Screenshot](result2.png)
 
 ## License
 
