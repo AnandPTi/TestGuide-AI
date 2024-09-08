@@ -1,6 +1,6 @@
 from fastapi import FastAPI, File, UploadFile, Form
 import google.generativeai as genai
-import PIL.Image as Image  # Import PIL.Image explicitly
+import PIL.Image as Image 
 import os
 from pathlib import Path
 import io
@@ -13,16 +13,16 @@ from fastapi.responses import JSONResponse
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Or set it to your frontend URL if needed
+    allow_origins=["*"],  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-# Configure the generative model
+
 genai.configure(api_key="Your Api Key")
 model = genai.GenerativeModel(model_name="gemini-1.5-pro")
 
-# Folder to save uploaded images
+
 UPLOAD_FOLDER = "uploaded_images"
 Path(UPLOAD_FOLDER).mkdir(parents=True, exist_ok=True)
 
@@ -64,7 +64,7 @@ async def upload_images(files: list[UploadFile] = File(...), context: str = Form
     if context:
             prompt += f"\n\nAdditional context: {context}"
 
-    # Pass prompt and image data to the generative model (adjust depending on API capabilities)
+   
     response = model.generate_content([prompt]+ images)
 
     # After generating the response, delete the images
