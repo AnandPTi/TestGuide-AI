@@ -118,8 +118,6 @@ frontend/
 backend/
 ├── main.py          # FastAPI app with image handling and content generation
 ├── uploaded_images/ # Directory to temporarily store images
-├── requirements.txt # Python dependencies
-└── README.md        # Backend documentation
 ```
 
 ## How it Works
