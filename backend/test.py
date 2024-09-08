@@ -1,7 +1,7 @@
 # import google.generativeai as genai
 # # import os
 
-# # genai.configure(api_key="AIzaSyDpp8BBEMOveL5ul3pI0liujnKaNyCZi_A")
+# # genai.configure(api_key="API key")
 # # model = genai.GenerativeModel("gemini-1.5-flash")
 # # response = model.generate_content("Write a story about a magic backpack.")
 # # print(response.text)
@@ -9,7 +9,7 @@
 
 # sample_file_2 = PIL.Image.open('Screenshot from 2024-09-08 02-47-29.png')
 # sample_file_3 = PIL.Image.open('Screenshot from 2024-09-08 02-46-43.png')
-# genai.configure(api_key="AIzaSyDpp8BBEMOveL5ul3pI0liujnKaNyCZi_A")
+# genai.configure(api_key="API key")
 # model = genai.GenerativeModel(model_name="gemini-1.5-pro")
 
 # prompt =  """Generate a detailed, step-by-step guide on how to test each functionality based on the provided screenshots. For each test case, include the following details:
@@ -28,7 +28,7 @@ import google.generativeai as genai
 import PIL.Image
 
 # Configure API key and model
-genai.configure(api_key="AIzaSyDpp8BBEMOveL5ul3pI0liujnKaNyCZi_A")
+genai.configure(api_key="API KEY")
 model = genai.GenerativeModel(model_name="gemini-1.5-pro")
 
 # Open images using PIL
