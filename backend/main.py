@@ -50,16 +50,7 @@ async def upload_images(files: list[UploadFile] = File(...), context: str = Form
         image = Image.open(file_path)
         images.append(image)
 
-    # Define the prompt for content generation
-    # prompt = """Generate a detailed, step-by-step guide on how to test each functionality based on the provided screenshots. For each test case, include the following details:
 
-    # 1. **Description**: What is this test case about?
-    # 2. **Pre-conditions**: What needs to be set up or ensured before starting the test?
-    # 3. **Testing Steps**: Provide clear, step-by-step instructions on how to perform the test.
-    # 4. **Expected Result**: What should happen if the feature works correctly?
-
-    # The screenshots provided are as follows:
-    # """
     prompt = """Provide a comprehensive, detailed guide for testing each functionality based on the provided screenshots. Each test case should include the following elements:
 
     -Description: A clear and concise explanation of the purpose of the test.
